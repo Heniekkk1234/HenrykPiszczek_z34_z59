@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <title>Zadanie 44</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var ilosc_wykonan_pis = (8 % 4) + 10;
+        var wielkosc_liter_pis = (8 % 3) + 40;
+
+        document.write("Ilość wykonania pętli = " + ilosc_wykonan_pis + "<br>");
+        document.write("Wielkość liter = " + wielkosc_liter_pis + "px<br><br>");
+
+        for(var i_pis = 1; i_pis <= ilosc_wykonan_pis; i_pis++) {
+            if(i_pis % 2 !== 0) {
+                document.write("<span style='font-size:" + wielkosc_liter_pis + "px;'>Piszczek</span><br>");
+            } else {
+                document.write("<span style='font-size:" + wielkosc_liter_pis + "px;'>Henryk</span><br>");
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<html>
+ <body>
+ <textarea cols="150" rows="50">
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <title>Zadanie 47</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var a_pis, b_pis, c_pis;
+        do {
+            a_pis = parseFloat(prompt("Podaj bok a (a > 0):", ""));
+            b_pis = parseFloat(prompt("Podaj bok b (b > 0):", ""));
+            c_pis = parseFloat(prompt("Podaj bok c (c > 0):", ""));
+        } while (!(a_pis > 0 && b_pis > 0 && c_pis > 0 && (a_pis + b_pis > c_pis) && (a_pis + c_pis > b_pis) && (c_pis + b_pis > a_pis)));
+
+        document.write("Podane boki tworzą poprawny trójkąt: a=" + a_pis + ", b=" + b_pis + ", c=" + c_pis);
+    </script>
+</body>
+</html>
+
+<!-- Piszczek Z47_JS_KOD -->
+</textarea>
+ </body>
+</html>

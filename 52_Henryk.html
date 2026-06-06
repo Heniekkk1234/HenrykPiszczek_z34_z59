@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <title>Zadanie 52</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var a_pis = 5; 
+        var b_pis = 20; 
+
+        for(var i_pis = 1; i_pis <= b_pis; i_pis++) {
+            document.write("*");
+        }
+        document.write("<br>");
+
+        for(var i_pis = 1; i_pis <= a_pis - 2; i_pis++) {
+            document.write("*");
+            for(var j_pis = 1; j_pis <= b_pis - 2; j_pis++) {
+                document.write("&nbsp;&nbsp;"); 
+            }
+            document.write("*<br>");
+        }
+
+        for(var i_pis = 1; i_pis <= b_pis; i_pis++) {
+            document.write("*");
+        }
+        document.write("<br>");
+    </script>
+</body>
+</html>

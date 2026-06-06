@@ -1,0 +1,44 @@
+<html>
+ <body>
+ <textarea cols="150" rows="50">
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <title>Zadanie 54</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var imie_pis = prompt("Podaj imię:", "Henryk");
+        var nazwisko_pis = prompt("Podaj nazwisko:", "Piszczek");
+
+        var a_pis = (nazwisko_pis.length % 4) + 5;
+        var b_pis = (imie_pis.length % 6) + 20;
+
+        for(var i_pis = 1; i_pis <= b_pis; i_pis++) {
+            document.write("*");
+        }
+        document.write("<br>");
+
+        var wiersz_pis = "*";
+        for (var i_pis = 1; i_pis <= (b_pis - 2); i_pis++) {
+            wiersz_pis = wiersz_pis + "&nbsp;&nbsp;";
+        }
+        wiersz_pis = wiersz_pis + "*";
+
+        for(var i_pis = 1; i_pis <= a_pis - 2; i_pis++) {
+            document.write(wiersz_pis + "<br>");
+        }
+
+        for(var i_pis = 1; i_pis <= b_pis; i_pis++) {
+            document.write("*");
+        }
+        document.write("<br>");
+    </script>
+</body>
+</html>
+
+<!-- Piszczek Z54_JS_KOD -->
+</textarea>
+ </body>
+</html>

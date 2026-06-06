@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <title>Zadanie 51</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var ile_razy_pis = parseInt(prompt("Ile razy powtórzyć?", ""));
+        var inicjaly_pis = prompt("Podaj swoje inicjały:", "HP");
+
+        for (var i_pis = 1; i_pis <= ile_razy_pis; i_pis++) {
+            for (var k_pis = 1; k_pis <= i_pis; k_pis++) {
+                document.write("&nbsp;&nbsp;");
+            }
+            document.write(i_pis + "_" + inicjaly_pis + "_" + i_pis + "<br>");
+        }
+    </script>
+</body>
+</html>

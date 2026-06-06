@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <title>Zadanie 59</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var R_pis = parseFloat(prompt("Podaj promień koła R:", ""));
+        var N_pis = 0;
+        var R_calkowite_pis = parseInt(R_pis) + 1; 
+
+        for(var i_pis = -R_calkowite_pis; i_pis <= R_calkowite_pis; i_pis++) {
+            for(var j_pis = -R_calkowite_pis; j_pis <= R_calkowite_pis; j_pis++) {
+                if(Math.sqrt(i_pis * i_pis + j_pis * j_pis) <= R_pis) {
+                    N_pis++;
+                }
+            }
+        }
+        document.write("Dla R=" + R_pis + " liczba punktów kratowych wynosi N(" + R_pis + ")=" + N_pis);
+    </script>
+</body>
+</html>

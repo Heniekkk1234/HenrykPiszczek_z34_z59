@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <title>Zadanie 56</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var w_pis;
+        for(var i_pis = 0; i_pis <= 39; i_pis++) {
+            w_pis = i_pis * i_pis + i_pis + 41;
+            document.write("i=" + i_pis + " w(" + i_pis + ")=" + w_pis + "<br>");
+
+            if((i_pis + 1) % 5 === 0 && i_pis !== 39) {
+                if(!confirm("Wyświetlono 5 linii. Kontynuować?")) {
+                    break;
+                }
+            }
+        }
+    </script>
+</body>
+</html>

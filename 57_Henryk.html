@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <title>Zadanie 57</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var num_dziennik_pis = 17;
+        var wyswietlone_pis = 0;
+        for(var i_pis = num_dziennik_pis; i_pis <= num_dziennik_pis + 15; i_pis++) {
+            var pierw_2_pis = Math.sqrt(i_pis).toFixed(2);
+            var pierw_4_pis = Math.sqrt(Math.sqrt(i_pis)).toFixed(2);
+
+            document.write("I=" + i_pis + " pierw_2(" + i_pis + ")=" + pierw_2_pis + " pierw_4(" + i_pis + ")=" + pierw_4_pis + "<br>");
+            wyswietlone_pis++;
+
+            if(wyswietlone_pis % 3 === 0 && i_pis !== (num_dziennik_pis + 15)) {
+                if(!confirm("Naciśnij OK, aby kontynuować")) {
+                    break;
+                }
+            }
+        }
+    </script>
+</body>
+</html>

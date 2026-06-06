@@ -1,0 +1,31 @@
+<html>
+ <body>
+ <textarea cols="150" rows="50">
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <title>Zadanie 49</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var n_pis = parseInt(prompt("Podaj liczbę n (n>=0) do obliczenia silni:", ""));
+        var silnia_pis = 1;
+
+        if (n_pis >= 0) {
+            for(var i_pis = 1; i_pis <= n_pis; i_pis++) {
+                silnia_pis *= i_pis;
+            }
+            document.write("n=" + n_pis + "<br>");
+            document.write(n_pis + "!=" + silnia_pis);
+        } else {
+            document.write("Silnia niezdefiniowana dla liczb ujemnych.");
+        }
+    </script>
+</body>
+</html>
+
+<!-- Piszczek Z49_JS_KOD -->
+</textarea>
+ </body>
+</html>
